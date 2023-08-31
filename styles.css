@@ -21,6 +21,8 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 10rem;
+    font-family: sans-serif;
 }
 
 .nav_list > li {
@@ -29,6 +31,8 @@ nav {
 
 .logo_ahcr {
     margin-right: auto;
+    margin-left: 10rem;
     display: flex;
     align-items: center;
+
 }

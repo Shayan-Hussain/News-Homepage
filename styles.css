@@ -21,7 +21,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 10rem;
+    margin-right: 50px;
     font-family: sans-serif;
 }
 
@@ -31,33 +31,51 @@ nav {
 
 .logo_ahcr {
     margin-right: auto;
-    margin-left: 10rem;
+    margin-left: 50px;
     display: flex;
     align-items: center;
-
 }
 
 main {
-    display: inline-grid;
-    grid-template-areas: 
-        'popular popular new'
-        'popular popular new'
-        'trending1 trending2 trending4';
+    display: flex;
     width: 100vw;
     height: 100vh;
 }
 
 .popular {
-    grid-area: "popular";
-    width: 100%;
-    height:100%;
-    display: flex;
-
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    display: inline-grid;
+    grid-template-areas: 
+        "img    img"
+        "heading    para"
+    ;
 
 }
 
 .popular_img {
     width: 100%;
     height: 100%;
+    grid-area: img;
+    object-fit: contain;
+}
 
+.heading_popular_img {
+    grid-area: heading;
+    width: 225px;
+    height: 250px;  
+}
+
+.para {
+    grid-area: para;
+    width: 225px;
+    height: 250px;
+}
+
+.readmore {
+    width: 150px;
+    height: 35px;
+    background: black;
+    color: white;
 }

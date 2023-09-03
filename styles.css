@@ -42,8 +42,11 @@ nav {
 
 main {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
+    gap: 10px;
 }
 
 .popular {
@@ -55,7 +58,6 @@ main {
         "img    img"
         "heading    para"
     ;
-    margin: 10px;
 }
 
 .popular_img {
@@ -94,12 +96,45 @@ main {
     background: black;
     color: white;
     height: 500px;
-    margin: 10px;
 }
-
 .new > h3 {
     padding: 5px 0px;
 }
 .new > h3:hover {
     color: orange;
+}
+
+.trending_1 , .trending_2 , .trending_3 {
+    width: 330px;
+    height: 300px;
+    display: grid;
+    grid-template-areas: 
+        "img num_h"
+        "img txt_h"
+        "img  para"
+    ;
+    /* overflow-y: hidden; */
+}
+
+.tred_img {
+    grid-area: img;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.trend > h1 {
+    grid-area: num_h;
+}
+
+.trend > h3 {
+    grid-area: txt_h;
+}
+
+.trend > h3:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.trend > p {
+    grid-area: para;
 }

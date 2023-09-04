@@ -25,7 +25,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 200px;
+    margin-right: 300px;
     font-family: sans-serif;
 }
 
@@ -33,9 +33,13 @@ nav {
     padding-left: 25px;
 }
 
+.nav_list > li:hover {
+    color: orange;
+}
+
 .logo_ahcr {
     margin-right: auto;
-    margin-left: 200px;
+    margin-left: 300px;
     display: flex;
     align-items: center;
 }
@@ -48,13 +52,13 @@ main {
     height: 100vh;
     gap: 10px;
     row-gap: 10px;
-    padding: 0px 200px;
+    padding: 0px 300px;
 }
 
 .popular {
     width: 500px;
     height: 500px;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: inline-grid;
     grid-template-areas: 
         "img    img"
@@ -79,7 +83,7 @@ main {
 
 .heading_popular_img > h1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45.5px;
 }
 
 .para {
@@ -87,7 +91,7 @@ main {
     padding: 10px 0px;
     width: 225px;
     height: 250px;
-    font-size: 20px;
+    font-size: 18.4px;
 }
 
 .readmore {
@@ -154,6 +158,25 @@ main {
     grid-area: para;
 }
 
+@media (max-width: 1270px) {
+    main {
+        padding: 0 200px;
+    }
+    .logo_ahcr {
+        margin-left: 200px;
+    }
+    .nav_list {
+        margin-right: 200px;
+    }
+    .heading_popular_img > h1 {
+        font-weight: 700;
+        font-size: 50px;
+    }
+    .para {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 1170px) {
     main {
         padding: 0 170px;
@@ -175,5 +198,12 @@ main {
     }
     .nav_list {
         margin-right: 150px;
+    }
+}
+
+@media (max-width: 1070) {
+    main {
+        flex-direction: column;
+        flex-wrap: none;
     }
 }

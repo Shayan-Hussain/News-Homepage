@@ -153,3 +153,27 @@ main {
 .trend > p {
     grid-area: para;
 }
+
+@media (max-width: 1170px) {
+    main {
+        padding: 0 170px;
+    }
+    .logo_ahcr {
+        margin-left: 170px;
+    }
+    .nav_list {
+        margin-right: 170px;
+    }
+}
+
+@media (max-width: 1110px) {
+    main {
+        padding: 0 150px;
+    }
+    .logo_ahcr {
+        margin-left: 150px;
+    }
+    .nav_list {
+        margin-right: 150px;
+    }
+}

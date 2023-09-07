@@ -1,11 +1,10 @@
-let nav_list = document.querySelector(".nav_list");
-if (window.innerWidth < 400) {
-    if (nav_list) {
-        nav_list.remove();
+const res = () => {
+    if (window.innerWidth <= 400) {
+        if (nav_list) {
+            let nav_list = document.querySelector(".nav_list");
+            nav_list
+        }
     }
-    let main = document.querySelector(main);
-    main.style = "padding: 20px";
-    let nav_bar = doucment.querySelector(nav);
-    nav_bar.style = "margin-left: 20px"
-
 }
+
+res();

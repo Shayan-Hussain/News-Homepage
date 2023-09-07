@@ -207,3 +207,9 @@ main {
         flex-wrap: none;
     }
 }
+
+@media (max-width: 400) {
+    .nav_list   {
+        display: none;
+    }
+}

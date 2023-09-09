@@ -14,7 +14,8 @@ a:hover {
     cursor: pointer;
 }
 nav {
-    width: 100vw;
+    width: 900px;
+    margin: 0 auto;
     height: 70px;
     display: flex;
     flex-direction: flex-end;
@@ -25,7 +26,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 300px;
     font-family: sans-serif;
 }
 
@@ -39,7 +39,6 @@ nav {
 
 .logo_ahcr {
     margin-right: auto;
-    margin-left: 300px;
     display: flex;
     align-items: center;
 }
@@ -48,11 +47,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
-    width: 100vw;
+    width: 900px;
+    margin: 0 auto;
     height: 100vh;
     gap: 10px;
     row-gap: 10px;
-    padding: 0px 300px;
 }
 
 .popular {
@@ -158,58 +157,14 @@ main {
     grid-area: para;
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 900px) {
     main {
-        padding: 0 200px;
+        width: 100vw;
+        margin: 0;
+        justify-content: center;
     }
-    .logo_ahcr {
-        margin-left: 200px;
-    }
-    .nav_list {
-        margin-right: 200px;
-    }
-    .heading_popular_img > h1 {
-        font-weight: 700;
-        font-size: 50px;
-    }
-    .para {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 1170px) {
-    main {
-        padding: 0 170px;
-    }
-    .logo_ahcr {
-        margin-left: 170px;
-    }
-    .nav_list {
-        margin-right: 170px;
-    }
-}
-
-@media (max-width: 1110px) {
-    main {
-        padding: 0 150px;
-    }
-    .logo_ahcr {
-        margin-left: 150px;
-    }
-    .nav_list {
-        margin-right: 150px;
-    }
-}
-
-@media (max-width: 1070) {
-    main {
-        flex-direction: column;
-        flex-wrap: none;
-    }
-}
-
-@media (max-width: 400) {
-    .nav_list   {
-        display: none;
+    nav {
+        width: 100vw;
+        margin: 0;
     }
 }

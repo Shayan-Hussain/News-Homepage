@@ -43,6 +43,12 @@ nav {
     align-items: center;
 }
 
+.ham_burger_icon {
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;

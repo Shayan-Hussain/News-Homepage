@@ -48,12 +48,42 @@ nav {
     height: 20px;
     margin: auto 0;
     margin-right: 20px;
+    cursor: pointer;
+}
+
+.mobile_nav {
+    backdrop-filter: blur(15px);
+}
+
+.ham_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.border_top {
+    border-top: 1px solid black;
+}
+
+.ham_list:hover {
+    color: orange;
+}
+
+.mobile_logo_cross {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     width: 900px;
     margin: 0 auto;
     height: 100vh;
@@ -107,6 +137,7 @@ main {
     background: black;
     color: white;
     margin-top: 25px;
+    cursor: pointer;
 }
 
 .new {

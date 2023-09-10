@@ -44,9 +44,10 @@ nav {
 }
 
 .ham_burger_icon {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     margin: auto 0;
+    margin-right: 20px;
 }
 
 main {
@@ -63,7 +64,6 @@ main {
 .popular {
     width: 500px;
     height: 500px;
-    /* overflow: hidden; */
     display: inline-grid;
     grid-template-areas: 
         "img    img"
@@ -97,6 +97,8 @@ main {
     width: 225px;
     height: 250px;
     font-size: 18.4px;
+    display: flex;
+    flex-direction: column;
 }
 
 .readmore {
@@ -172,5 +174,32 @@ main {
     nav {
         width: 100vw;
         margin: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    .logo_ahcr {
+        margin-left: 20px;
+    }
+    .popular {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+    .new {
+        width: 100vw;
+        height: fit-content;
+    }
+    .readmore {
+        width: 100%;
+    }
+    .trending_1 , .trending_2 , .trending_3 {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        align-items: center;
+        text-align: center;
     }
 }

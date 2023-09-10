@@ -8,5 +8,4 @@ if (window.innerWidth < 380) {
         let nav = document.querySelector("nav");
         nav.innerHTML += ham_img;
     }
-    
 }

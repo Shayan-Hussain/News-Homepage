@@ -19,6 +19,7 @@ nav {
     height: 70px;
     display: flex;
     flex-direction: flex-end;
+    z-index: 10000;
 }
 
 .nav_list {

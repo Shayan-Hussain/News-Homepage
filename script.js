@@ -66,6 +66,9 @@ function show_menu() {
         let mobile_nav  = document.querySelector(".mobile_nav");
         mobile_nav.remove();
         open = false;
+        nav.innerHTML = "";
+        nav.innerHTML += `<a class="logo_ahcr"><img src="/assets/logo.svg" alt="W." class="logo"></a>
+                          <img src="/assets/icon-menu.svg" alt="menu" class="ham_burger_icon" onclick="show_menu()">`
         return;
     }
 
